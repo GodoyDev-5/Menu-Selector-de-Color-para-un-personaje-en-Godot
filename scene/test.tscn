@@ -1,0 +1,42 @@
+[gd_scene load_steps=5 format=3 uid="uid://dhifk5h5agte0"]
+
+[ext_resource type="PackedScene" uid="uid://by00kwmukc381" path="res://scene/jugador.tscn" id="1_rq8es"]
+[ext_resource type="Shader" path="res://shader/color.gdshader" id="2_rh07k"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_jhbxg"]
+shader = ExtResource("2_rh07k")
+shader_parameter/epsilon = 0.0001
+shader_parameter/old_color1 = Color(1, 1, 1, 1)
+shader_parameter/new_color1 = Color(1, 1, 0, 1)
+shader_parameter/old_color2 = null
+shader_parameter/new_color2 = null
+shader_parameter/old_color3 = null
+shader_parameter/new_color3 = null
+shader_parameter/old_color4 = null
+shader_parameter/new_color4 = null
+shader_parameter/old_color5 = null
+shader_parameter/new_color5 = null
+
+[sub_resource type="SphereMesh" id="SphereMesh_3l7jl"]
+
+[node name="test" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1161.0
+offset_bottom = 653.0
+color = Color(0.571107, 0.802834, 1, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+offset_top = 529.0
+offset_right = 1161.0
+offset_bottom = 1182.0
+scale = Vector2(1, 0.2)
+color = Color(0.519945, 0.890104, 0.180005, 1)
+
+[node name="jugador" parent="." instance=ExtResource("1_rq8es")]
+position = Vector2(571, 502)
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+material = SubResource("ShaderMaterial_jhbxg")
+scale = Vector2(197.821, 197.821)
+mesh = SubResource("SphereMesh_3l7jl")

@@ -1,0 +1,17 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://dcioys3yovb74"]
+
+[ext_resource type="Shader" path="res://shader/color.gdshader" id="1_1yjof"]
+
+[resource]
+shader = ExtResource("1_1yjof")
+shader_parameter/epsilon = 0.0001
+shader_parameter/old_color1 = Color(0.321569, 0.101961, 0, 1)
+shader_parameter/new_color1 = Color(0.321569, 0.101961, 0, 1)
+shader_parameter/old_color2 = Color(0.286275, 0.321569, 1, 1)
+shader_parameter/new_color2 = Color(0.286275, 0.321569, 1, 1)
+shader_parameter/old_color3 = Color(0.47451, 0.0705882, 0.639216, 1)
+shader_parameter/new_color3 = Color(0.47451, 0.0705882, 0.639216, 1)
+shader_parameter/old_color4 = null
+shader_parameter/new_color4 = null
+shader_parameter/old_color5 = null
+shader_parameter/new_color5 = null
